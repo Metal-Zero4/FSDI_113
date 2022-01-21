@@ -9,5 +9,10 @@
         {{ form.as_p }}
         <input type="submit" value="Log In" class="btn btn-dark">
     </form>
-    <small>Don't have an account with us? <a href="{% url 'signup' %}">Click here</a> to register.</small>
+    <small>Don't have an account with us? <a href="{% url 'signup' %}">Click here</a> to register.
+        <br>
+    Forgot your password? 
+    <br>
+    <a class="nav-link" href="{% url 'password_reset' %}">Click here</a> to reset your password.
+    </small>
 {% endblock content %}

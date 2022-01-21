@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 
+{% block title %}Home{% endblock title %}
+
 {% block content %}
-    <h1>Welcome to my blog!</h1>
+    <h1>Welcome to the Diesel Demons Customs blog!</h1>
+    <p>Here you can find posts about your favorite diesel trucks and new technologies. Check out the posts from our members <a class="nav-link" href="{% url 'post_list' %}">here</a>.</p>
+
 
 {% endblock content %}
